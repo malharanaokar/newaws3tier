@@ -2,7 +2,6 @@
 - name: launching an instance
   ec2:
      key_name: aws
-     group_id: vpc-f71b2a9f
      instance_type: t2.micro
      image: ami-e60e5a89
      wait: true
