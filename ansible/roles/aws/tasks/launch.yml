@@ -2,13 +2,13 @@
 - name: launching an instance
   ec2:
      key_name: aws
-     group_id: sg-c2764cab
+     group_id: vpc-f71b2a9f
      instance_type: t2.micro
      image: ami-e60e5a89
      wait: true
      region: ap-south-1
      count: 1
-     vpc_subnet_id: subnet-bac062f7
+     vpc_subnet_id: subnet-b0acf5d
      assign_public_ip: no
      instance_tags:
           Name: "{{ instance_name }}"
